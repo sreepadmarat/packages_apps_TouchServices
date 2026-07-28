@@ -43,13 +43,13 @@ To integrate this package into your custom ROM or Android source tree:
 
 1. **Clone the repository** into your source tree under `packages/apps/`:
    ```bash
-   git clone https://github.com/kenway214/packages_apps_TouchServices.git -b lineage-23.2 packages/apps/TouchServices
+   git clone https://github.com/sreepadmarat/packages_apps_TouchServices.git -b lineage-23.2 packages/apps/TouchServices
    ```
 
 2. **Include the product makefile** in your device tree's `device.mk` or `common.mk` file:
    ```makefile
    # TouchServices
-   $(call inherit-product, packages/apps/TouchServices/touchservice.mk)
+   $(call inherit-product-if-exists, packages/apps/TouchServices/touchservice.mk)
    ```
 
 3. **Build**:
