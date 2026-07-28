@@ -1,4 +1,4 @@
 on boot
     # Allow touch sampling control
-    chown system system /sys/devices/virtual/touch/touch_dev/bump_sample_rate
-    chmod 0660 /sys/devices/virtual/touch/touch_dev/bump_sample_rate
+    chown system system /proc/touchpanel/game_switch_enable
+    chmod 0660 /proc/touchpanel/game_switch_enable

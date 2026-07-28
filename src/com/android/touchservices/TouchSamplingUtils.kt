@@ -12,7 +12,7 @@ import com.android.touchservices.utils.FileUtils
 import org.json.JSONObject
 
 object TouchSamplingUtils {
-    const val TOUCH_SAMPLING_FILE = "/sys/devices/virtual/touch/touch_dev/bump_sample_rate"
+    const val TOUCH_SAMPLING_FILE = "/proc/touchpanel/game_switch_enable"
 
     const val PREF_ENABLED = "touch_sampling_enabled"
     const val PREF_AUTO_ENABLE = "touch_sampling_auto_enable"
